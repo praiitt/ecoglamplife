@@ -1,0 +1,29 @@
+{
+  "name": "eco-glamp-life",
+  "version": "1.0.0",
+  "description": "Eco Glamp Life - Himalayan Mountain Sanctuary Website",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "ecotourism",
+    "glamping",
+    "himalayas",
+    "mountain",
+    "kalga",
+    "tourism"
+  ],
+  "author": "EGL - Eco Glamp Life",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/eco-glamp-life.git"
+  },
+  "homepage": "https://your-domain.com"
+}

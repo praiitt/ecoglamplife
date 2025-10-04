@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGL - ECO Glamp Life | Mountain Sanctuary</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo/egl_logo.jpeg" alt="EGL Logo" class="logo-image">
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-video-wrapper">
+            <div class="hero-video-container">
+                <video class="hero-bg-video" autoplay muted loop playsinline>
+                    <source src="into_video/WhatsApp Video 2025-08-10 at 16.59.18.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <audio id="nature-sound" loop>
+                    <source src="into_video/nature-sounds.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <div class="hero-content">
+                    <h1>Experience the Magic of Himalayan Glamping</h1>
+                    <p>Where luxury meets nature in the heart of pine forests</p>
+                    <div class="hero-buttons">
+                        <a href="#experiences" class="cta-button">Explore Stays</a>
+                        <button id="sound-toggle" class="sound-button" title="Toggle Nature Sounds">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Tucked away in the quaint Himalayan village of Kalga, Eco Glamp Life is a cozy blend of café charm and cottage comfort.</p>
+            </div>
+            <div class="about-description">
+                <p>Surrounded by pine forests, hidden waterfalls, and natural hot springs, we're more than a place to stay — we're an experience you'll carry home. Here, every cup of coffee is brewed with love, every room opens to the mountains, and every day holds a little magic.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Prime Location</h3>
+                    <p>Perfect spot for treks & nature spots, with easy access to Sar Pass, Kheerganga, and secret local trails.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Cozy Cottages</h3>
+                    <p>Well-maintained accommodations with mountain views, warm blankets, and private balconies.</p>
+                </div>
+                <div class="about-card">
+                    <div class="card-icon">
+                        <i class="fas fa-compass"></i>
+                    </div>
+                    <h3>Local Adventures</h3>
+                    <p>Locally guided adventures and personalized hospitality that makes every stay memorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Stays Section -->
+    <section id="stays" class="stays">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Stays — Cottages & More</h2>
+                <p>Wake up to the sound of rustling pine leaves, crisp mountain air, and views that make your heart skip a beat.</p>
+            </div>
+            <div class="stays-grid">
+                <div class="stay-card">
+                    <div class="stay-icon">🏡</div>
+                    <h3>A-Frame Cottage</h3>
+                    <ul>
+                        <li>Private balcony with Himalayan views</li>
+                        <li>Cozy interiors with queen bed & warm blankets</li>
+                        <li>Bonfire evenings on request</li>
+                        <li>Perfect for couples & solo travelers</li>
+                    </ul>
+                </div>
+                <div class="stay-card">
+                    <div class="stay-icon">🌿</div>
+                    <h3>Rustic Mountain Cottage</h3>
+                    <ul>
+                        <li>Surrounded by apple trees</li>
+                        <li>Spacious room for 2–4 guests</li>
+                        <li>Great for families & groups</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pricing-section">
+                <h3>Stay Prices</h3>
+                <div class="pricing-grid">
+                    <div class="pricing-card">
+                        <h4>Standard Stay</h4>
+                        <div class="price">₹1,499</div>
+                        <p>per night (includes breakfast)</p>
+                    </div>
+                    <div class="pricing-card featured">
+                        <h4>Romantic Package</h4>
+                        <div class="price">₹1,999</div>
+                        <p>per night</p>
+                        <ul>
+                            <li>Breakfast & dinner</li>
+                            <li>1 guided trek</li>
+                            <li>Private stargazing session</li>
+                            <li>Cozy bonfire evening</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiences Section -->
+    <section id="experiences" class="experiences">
+        <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Mountain Adventure</h2>
+                <p>Tailored experiences that connect you with the Himalayas</p>
+            </div>
+            
+            <div class="experiences-showcase">
+                <!-- Featured Experience -->
+                <div class="featured-experience">
+                    <div class="featured-image">
+                        <img src="our_experinces/WhatsApp Image 2025-08-10 at 13.32.43 (2).jpeg" alt="Guided Mountain Treks" class="featured-img">
+                        <div class="featured-overlay">
+                            <span class="featured-badge">Most Popular</span>
+                        </div>
+                    </div>
+                    <div class="featured-content">
+                        <h3>🌄 Guided Mountain Treks</h3>
+                        <p>Discover hidden trails, secret waterfalls, and breathtaking viewpoints with our expert local guides.</p>
+                        <div class="experience-highlights">
+                            <span class="highlight">Expert Guides</span>
+                            <span class="highlight">Hidden Trails</span>
+                            <span class="highlight">Photo Tips</span>
+                        </div>
+                        <div class="featured-actions">
+                            <a href="#contact" class="btn btn-primary">Book Your Trek</a>
+                            <a href="https://www.instagram.com/eglkalga?utm_source=qr&igsh=MWRwZXZ5dDNsYWUyMA==" target="_blank" class="btn btn-outline">
+                                <i class="fab fa-instagram"></i>
+                                View Stories
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience Grid -->
+                <div class="experiences-grid">
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="our_experinces/WhatsApp Image 2025-08-10 at 13.32.42.jpeg" alt="Mountain Stays" class="experience-img">
+                            <div class="experience-overlay">
+                                <span class="experience-category">Accommodation</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <h4>🏡 Mountain Stays</h4>
+                            <p>Private balconies with panoramic mountain views</p>
+                            <a href="#contact" class="btn btn-outline">Book Stay</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="our_experinces/WhatsApp Image 2025-08-10 at 13.32.43 (1).jpeg" alt="Bonfire Evenings" class="experience-img">
+                            <div class="experience-overlay">
+                                <span class="experience-category">Evening</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <h4>🔥 Bonfire Evenings</h4>
+                            <p>Stories and music under starlit mountain skies</p>
+                            <a href="#contact" class="btn btn-outline">Join Us</a>
+                        </div>
+                    </div>
+
+                    <div class="experience-card">
+                        <div class="experience-image">
+                            <img src="our_experinces/WhatsApp Image 2025-08-10 at 13.32.43.jpeg" alt="Custom Packages" class="experience-img">
+                            <div class="experience-overlay">
+                                <span class="experience-category">Premium</span>
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <h4>🗝️ Custom Packages</h4>
+                            <p>Personalized mountain adventures just for you</p>
+                            <a href="#contact" class="btn btn-outline">Design Yours</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="experiences-cta">
+                    <h3>Ready for Your Mountain Escape?</h3>
+                    <p>Let us craft the perfect Himalayan experience for you</p>
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-mountain"></i>
+                        Start Planning
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>EGL in Pictures</h2>
+                <p>Experience the magic through our lens - every image tells an EGL story</p>
+                <a href="https://www.instagram.com/eglkalga?utm_source=qr&igsh=MWRwZXZ5dDNsYWUyMA==" target="_blank" class="instagram-link">
+                    <i class="fab fa-instagram"></i>
+                    Follow @eglkalga for daily mountain moments
+                </a>
+            </div>
+            
+            <!-- Gallery Categories -->
+            <div class="gallery-categories">
+                <button class="category-btn active" data-category="all">All Stories</button>
+                <button class="category-btn" data-category="accommodation">Accommodation</button>
+                <button class="category-btn" data-category="nature">Nature</button>
+                <button class="category-btn" data-category="activities">Activities</button>
+                <button class="category-btn" data-category="food">Food & Cafe</button>
+            </div>
+            
+            <div class="gallery-masonry">
+                <!-- Hero Image -->
+                <div class="gallery-item hero" data-category="accommodation">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.15.jpeg" alt="EGL Mountain Cottage with A-shaped mountain view" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Featured</span>
+                                <h3>EGL Mountain Cottage</h3>
+                                <p>A-shaped mountain view from your private balcony</p>
+                                <div class="gallery-actions">
+                                    <a href="#contact" class="btn btn-outline btn-small">Book Now</a>
+                                    <a href="https://www.instagram.com/eglkalga" target="_blank" class="btn btn-instagram btn-small">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Nature & Views -->
+                <div class="gallery-item tall" data-category="nature">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.16 (1).jpeg" alt="Pine Forests around EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Nature</span>
+                                <h4>Pine Forests</h4>
+                                <p>Serene pine forests surrounding your cottage</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Activities -->
+                <div class="gallery-item wide" data-category="activities">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.17 (1).jpeg" alt="Mountain trekking from EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Adventure</span>
+                                <h4>Mountain Trekking</h4>
+                                <p>Guided treks through pristine mountain trails</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Food & Cafe -->
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.16 (2).jpeg" alt="Home-cooked meals at EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Cuisine</span>
+                                <h4>Home-Cooked Meals</h4>
+                                <p>Fresh, local ingredients prepared with love</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Evening Vibes -->
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.16.jpeg" alt="Evening Bonfire at EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Evening</span>
+                                <h4>Bonfire Sessions</h4>
+                                <p>Cozy bonfire sessions under the starlit sky</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Starry Nights -->
+                <div class="gallery-item tall" data-category="nature">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.17.jpeg" alt="Starry nights at EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Night Sky</span>
+                                <h4>Starry Nights</h4>
+                                <p>Unpolluted mountain skies for stargazing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cafe -->
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.17 (2).jpeg" alt="Cafe at EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Cafe</span>
+                                <h4>Mountain Cafe</h4>
+                                <p>Cozy cafe with mountain views</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Luxury Stays -->
+                <div class="gallery-item" data-category="accommodation">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.18.jpeg" alt="Luxury accommodation at EGL" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Luxury</span>
+                                <h4>Premium Stays</h4>
+                                <p>Comfortable accommodations with mountain charm</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mountain Views -->
+                <div class="gallery-item wide" data-category="nature">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.44.32.jpeg" alt="New Mountain View" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Views</span>
+                                <h4>Himalayan Panoramas</h4>
+                                <p>Fresh perspectives of the Himalayas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Adventure -->
+                <div class="gallery-item" data-category="activities">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.44.38.jpeg" alt="Mountain Adventure" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Adventure</span>
+                                <h4>Mountain Trails</h4>
+                                <p>Explore the unknown trails</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery CTA -->
+            <div class="gallery-cta">
+                <h3>Ready to Experience EGL?</h3>
+                <p>Book your mountain escape and create your own story</p>
+                <div class="gallery-cta-actions">
+                    <a href="#contact" class="btn btn-primary">Book Your Stay</a>
+                    <a href="https://www.instagram.com/eglkalga" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-instagram"></i>
+                        Follow Our Journey
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>EGL in Pictures</h2>
+                <p>Discover the magic of EGL through stunning visuals - every image tells a story of adventure and beauty</p>
+            </div>
+            <div class="gallery-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="nature">Nature</button>
+                <button class="category-btn" data-category="accommodation">Accommodation</button>
+                <button class="category-btn" data-category="activities">Activities</button>
+                <button class="category-btn" data-category="food">Food & Cafe</button>
+            </div>
+            <div class="gallery-masonry">
+                <div class="gallery-item hero" data-category="nature">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.13.jpeg" alt="EGL Mountain View" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Nature</span>
+                                <h3>Himalayan Majesty</h3>
+                                <h4>Breathtaking mountain views</h4>
+                                <p>Wake up to panoramic vistas of the mighty Himalayas</p>
+                                <div class="gallery-actions">
+                                    <button class="btn btn-small" onclick="showLightbox('Himalayan Majesty', 'Breathtaking mountain views that greet you every morning', 'site_images/WhatsApp Image 2025-08-10 at 13.18.13.jpeg')">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item tall" data-category="accommodation">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.15.jpeg" alt="EGL Cottage" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Accommodation</span>
+                                <h3>Cozy Mountain Cottages</h3>
+                                <h4>Your home in the Himalayas</h4>
+                                <p>Comfortable stays with stunning mountain views</p>
+                                <div class="gallery-actions">
+                                    <button class="btn btn-small" onclick="showLightbox('Cozy Mountain Cottages', 'Comfortable stays with stunning mountain views', 'site_images/WhatsApp Image 2025-08-10 at 13.18.15.jpeg')">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item wide" data-category="activities">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.16.jpeg" alt="EGL Activities" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Activities</span>
+                                <h3>Adventure Awaits</h3>
+                                <h4>Explore the mountains</h4>
+                                <p>Guided treks and outdoor experiences</p>
+                                <div class="gallery-actions">
+                                    <button class="btn btn-small" onclick="showLightbox('Adventure Awaits', 'Guided treks and outdoor experiences', 'site_images/WhatsApp Image 2025-08-10 at 13.18.16.jpeg')">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="food">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.17.jpeg" alt="EGL Cafe" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Food & Cafe</span>
+                                <h3>Mountain Cafe</h3>
+                                <h4>Cozy dining experience</h4>
+                                <p>Delicious food with mountain views</p>
+                                <div class="gallery-actions">
+                                    <button class="btn btn-small" onclick="showLightbox('Mountain Cafe', 'Cozy dining experience with mountain views', 'site_images/WhatsApp Image 2025-08-10 at 13.18.17.jpeg')">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item" data-category="nature">
+                    <div class="gallery-image-wrapper">
+                        <img src="site_images/WhatsApp Image 2025-08-10 at 13.18.18.jpeg" alt="EGL Nature" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <div class="gallery-content">
+                                <span class="gallery-category">Nature</span>
+                                <h3>Pine Forest Magic</h3>
+                                <h4>Surrounded by nature</h4>
+                                <p>Pine forests and natural beauty</p>
+                                <div class="gallery-actions">
+                                    <button class="btn btn-small" onclick="showLightbox('Pine Forest Magic', 'Surrounded by pine forests and natural beauty', 'site_images/WhatsApp Image 2025-08-10 at 13.18.18.jpeg')">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <h3>Ready to Experience EGL?</h3>
+                <p>Book your stay and create memories that last a lifetime</p>
+                <div class="gallery-cta-actions">
+                    <a href="#contact" class="btn btn-primary">Book Your Stay</a>
+                    <a href="https://www.instagram.com/eglkalga" target="_blank" class="btn btn-outline">
+                        <i class="fab fa-instagram"></i>
+                        Follow Our Journey
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Enquiry Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Ready for Your EGL Adventure?</h2>
+                    <p>Let's craft your perfect mountain escape. Share your dreams and we'll create a personalized EGL experience just for you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>EGL - Eco Glamp Life, A-shaped mountain view Cottage, Himachal Pradesh, India</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>
+                                <a href="https://wa.me/919163563763" target="_blank" class="whatsapp-link">
+                                    +91 9163563763
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>rijumajumder7@gmail.com</span>
+                        </div>
+                    </div>
+                    
+                    <div class="map-section">
+                        <h3>Find Us</h3>
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3360.1234567890123!2d77.4514711!3d31.9966093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390445cd877cfdaf%3A0x6b80e8cb9c9a6f52!2sEGL%20-%20Eco%20Glamp%20Life%20%22A%20shaped%20mountain%20view%20Cottage%22%20%7C%20Stays%20%7C%20Bonfire%20%7C%20Cafe%20%7C%20trek%20%7C!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" 
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://www.google.com/maps/place/EGL+-+Eco+Glamp+Life+%22+A+shaped+mountain+view+Cottage%22+%7C+Stays+%7C+Bonfire+%7C+Cafe+%7C+trek+%7C/@31.9966093,77.4536599,17z/data=!4m21!1m11!3m10!1s0x390445cd877cfdaf:0x6b80e8cb9c9a6f52!2sEGL+-+Eco+Glamp+Life+%22+A+shaped+mountain+view+Cottage%22+%7C+Stays+%7C+Bonfire+%7C+Cafe+%7C+trek+%7C!5m2!4m1!1i2!8m2!3d31.9966093!4d77.4536599!10e1!16s%2Fg%2F11rf48jzld!3m8!1s0x390445cd877cfdaf:0x6b80e8cb9c9a6f52!5m2!4m1!1i2!8m2!3d31.9966093!4d77.4536599!16s%2Fg%2F11rf48j2ld?entry=ttu&g_ep=EgoyMDI1MDgwNi4wIKXMDSoASAFQAw%3D%3D" 
+                           target="_blank" 
+                           class="btn btn-outline map-btn">
+                            <i class="fas fa-map-marked-alt"></i>
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="enquiryForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" required>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="experience" name="experience" required>
+                                <option value="">Select Experience</option>
+                                <option value="solo">Solo Escape</option>
+                                <option value="group">Group Adventure</option>
+                                <option value="detox">Digital Detox</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" id="arrival" name="arrival" required>
+                            <label for="arrival">Arrival Date</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="number" id="guests" name="guests" min="1" max="10" required>
+                            <label for="guests">Number of Guests</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your dream mountain experience..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Enquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="logo/egl_logo.jpeg" alt="EGL Logo" class="footer-logo-image">
+                    </div>
+                    <p>Your Himalayan hideaway where coffee meets clouds and adventures start at your doorstep.</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/eglkalga?utm_source=qr&igsh=MWRwZXZ5dDNsYWUyMA==" target="_blank" title="Follow @eglkalga on Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" title="Facebook (Coming Soon)">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" title="Twitter (Coming Soon)">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experiences">Experiences</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Experiences</h4>
+                    <ul>
+                        <li><a href="#contact">Solo Escape</a></li>
+                        <li><a href="#contact">Group Adventure</a></li>
+                        <li><a href="#contact">Digital Detox</a></li>
+                        <li><a href="#contact">Custom Packages</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>EGL - Eco Glamp Life, A-shaped mountain view Cottage, Himachal Pradesh, India</p>
+                    <p>
+                        <a href="https://wa.me/919163563763" target="_blank" class="whatsapp-link">
+                            +91 9163563763
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </p>
+                    <p>hello@eglkalga.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 EGL - Eco Glamp Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Instagram Widget -->
+    <div class="floating-instagram">
+        <a href="https://www.instagram.com/eglkalga?utm_source=qr&igsh=MWRwZXZ5dDNsYWUyMA==" target="_blank" class="instagram-float">
+            <i class="fab fa-instagram"></i>
+            <span>@eglkalga</span>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
